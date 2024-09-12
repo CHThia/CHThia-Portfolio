@@ -8,10 +8,10 @@ import MongoDB from '../img/MongoDB-Logo.png'
 import PostgreSQL from '../img/PostgreSQL-Logo.png'
 import Konva from '../img/Konva-Logo.png'
 import Laravel from '../img/Laravel-Logo.png'
-import PHP from '../img/Php-Logo.png'
+import Php from '../img/Php-Logo.png'
 import MySQL from '../img/MySQL-Logo.png'
 import BootStrap from '../img/BootStrap-Logo.png'
-import XAMPP from '../img/XAMPP-Logo.png'
+import Xampp from '../img/XAMPP-Logo.png'
 import Git from '../img/Github-Logo.png'
 
 
@@ -43,6 +43,16 @@ export default function skill () {
           <div>
             <img src= { Js } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
             <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >JavaScript</p>
+          </div>
+
+          <div>
+            <img src= { BootStrap } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
+            <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >BootStrap</p>
+          </div>
+
+          <div>
+            <img src= { Git } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
+            <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >GitHub</p>
           </div>
 
           <div>
@@ -81,7 +91,7 @@ export default function skill () {
           </div>
 
           <div>
-            <img src= { PHP } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
+            <img src= { Php } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
             <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >PHP</p>
           </div>
 
@@ -91,23 +101,12 @@ export default function skill () {
           </div>
 
           <div>
-            <img src= { BootStrap } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
-            <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >BootStrap</p>
-          </div>
-
-          <div>
-            <img src= { XAMPP } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
+            <img src= { Xampp } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
             <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >XAMPP</p>
-          </div>
-
-          <div>
-            <img src= { Git } alt="html" style={{ maxWidth: '100px', height: 'auto', display: 'block' }}/>
-            <p style= {{margin: '8px 0 0 5px', fontSize:'20px' }} >GitHub</p>
           </div>
 
         </div>
       </div>
     </>
   )
-  
 }

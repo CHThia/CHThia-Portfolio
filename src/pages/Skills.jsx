@@ -12,7 +12,7 @@ import PHP from '../img/Php-Logo.png'
 import MySQL from '../img/MySQL-Logo.png'
 import BootStrap from '../img/BootStrap-Logo.png'
 import XAMPP from '../img/XAMPP-Logo.png'
-import Git from '../img/GitHub-Logo.png'
+import Git from '../img/Github-Logo.png'
 
 
 export default function skill () {

@@ -24,7 +24,8 @@ export default function skill () {
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(5, 1fr)', 
-          gap: '50px', padding: '10px', 
+          gap: '50px', 
+          padding: '10px', 
           justifyItems:'center', 
           alignItems: 'center', 
           marginTop: '35px' 

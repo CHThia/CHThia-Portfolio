@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { Card, Modal, Button } from 'react-bootstrap';
 
-import MTG from '../img/MTG-Thumbnail.JPG'
-import Html from '../img/HTML-Logo.png'
-import Css from '../img/Css-Logo.png'
-import Js from '../img/JavaScript-Logo.png'
+import AttendanceLogger from '../img/AttendanceLogger-Thumbnail.JPG'
 import ReactJS from '../img/React-Logo.png'
+import Node from '../img/Node-Logo.png'
+import Express from '../img/Express-Logo.png'
+import MongoDB from '../img/MongoDB-Logo.png'
 import Git from '../img/Github-Logo.png'
 
 
-export default function ProjectTwo() {
+export default function ProjectFour() {
 
   const [showModal, setShowModal] = useState(false);
 
@@ -32,26 +32,26 @@ export default function ProjectTwo() {
       }} 
         onClick={ handleCardClick }
       >
-        <Card.Img variant="top" src={ MTG } alt="Magic The Gathering" />
+        <Card.Img variant="top" src={ AttendanceLogger } alt="Young Da Vinci" />
           <Card.Body>
-            <Card.Title style={{ fontSize: '18px', textAlign:'center', marginTop:'3px' }}>Magic The Gathering - Deck Builds</Card.Title>
+            <Card.Title style={{ fontSize: '18px', textAlign:'center', marginTop:'3px' }}>Attendance Logger</Card.Title>
           </Card.Body>
       </Card>
 
       <Modal show={showModal} onHide={handleClose} centered size='xl'>
         <Modal.Header closeButton>
-          <Modal.Title>Magic The Gathering - Deck Builds ( <a 
-            href='https://mtg-deck-builds.vercel.app/' 
+          <Modal.Title>Attendance Logger ( <a 
+            href='https://project-3-geekery.onrender.com/' 
             target='blank' 
             rel="noopener noreferrer"
             style={{ fontSize:'20px'}}>
               Click link to application</a> ) or 
             ( <a 
-            href='https://github.com/CHThia/GA-Project02-MTG-DeckBuilds-2024' 
+            href='https://github.com/ThiaCH/Project-3-Geekery' 
             target='blank' 
             rel="noopener noreferrer"
             style={{ fontSize:'20px'}}>
-            Click link to Git Repository</a> ) 
+            Click link to Git Repository</a> )
           </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ 
@@ -61,7 +61,7 @@ export default function ProjectTwo() {
           alignItems: 'center',
         }}>
           <div style={{ padding:'30px' }}>
-            <img src={ MTG } alt='Magic The Gathering' style={{ 
+            <img src={ AttendanceLogger } alt='Attendance Logger' style={{ 
               maxWidth: '450px', 
               borderRadius:'15px', 
               border: '2px solid black',
@@ -73,16 +73,10 @@ export default function ProjectTwo() {
             <div>
               <h4 style={{ padding:'5px', textAlign:'left', marginTop: '-10px'}} >Project Info :</h4>
               <p style={{ padding:'5px', textAlign:'left', marginTop: '0', fontSize: '16px' }}>
-                For this FrontEnd project, I used ReactJS and MaterialUI to create a <br />web application that 
-                interacts with the unofficial MTG API (<a 
-                  href='https://magicthegathering.io/' 
-                  target='blank' 
-                  rel="noopener noreferrer"
-                  style={{ fontSize:'16px'}}>https://magicthegathering.io/</a>), 
-                allowing users to retrieve card information <br />to build decks or combos, with Airtable as the backend.
+              The Attendance Login Application is designed to streamline <br />the process of monitoring and managing attendance for a certain educational institution. This prototype concept is intended to provide <br />a user-friendly interface that caters to both administrators and students <br />by enhancing efficiency and accessibility.
               </p>
 
-              <h4 style={{ padding:'5px', textAlign:'left', marginTop: '-20px', marginBottom: '10px'}} >Technologies Used :</h4>
+              <h4 style={{ padding:'5px', textAlign:'left', marginTop: '-40px', marginBottom: '10px'}} >Technologies Used :</h4>
               
               <div style={{ 
                 display: 'grid', 
@@ -90,20 +84,20 @@ export default function ProjectTwo() {
                 justifyItems:'left', 
               }}>
                 <div>
-                  <img src= { Html } alt="html" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
-                  <p style= {{margin: '5px 0 0 5px', fontSize: '15px' }} >HTML</p>
+                  <img src= { ReactJS } alt="html" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
+                  <p style= {{margin: '5px 0 0 5px', fontSize: '15px' }} >React</p>
                 </div>
                 <div>
-                  <img src= { Css } alt="css" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
-                  <p style= {{margin: '5px 0 0 0px', fontSize:'15px' }} >CSS</p>
+                  <img src= { Node } alt="css" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
+                  <p style= {{margin: '5px 0 0 0px', fontSize:'15px' }} >Node</p>
                 </div>
                 <div>
-                  <img src= { Js } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
-                  <p style= {{margin: '5px 0 0 -8px', fontSize:'15px' }} >Javascript</p>
+                  <img src= { Express } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
+                  <p style= {{margin: '5px 0 0 0px', fontSize:'15px' }} >Express</p>
                 </div>
                 <div>
-                  <img src= { ReactJS } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
-                  <p style= {{margin: '5px 0 0 -8px', fontSize:'15px' }} >React</p>
+                  <img src= { MongoDB } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
+                  <p style= {{margin: '5px 0 0 -10px', fontSize:'15px' }} >MongoDB</p>
                 </div>
                 <div>
                   <img src= { Git } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>

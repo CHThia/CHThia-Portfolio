@@ -1,6 +1,7 @@
 import ProjectOne from '../components/Project_01'
 import ProjectTwo from '../components/Project_02'
 import ProjectThree from '../components/Project_03'
+import ProjectFour from '../components/Project_04'
 
 
 export default function ProjectShowcase() {
@@ -23,6 +24,7 @@ export default function ProjectShowcase() {
           <ProjectOne />
           <ProjectTwo />
           <ProjectThree />
+          <ProjectFour />
 
         </div>
 

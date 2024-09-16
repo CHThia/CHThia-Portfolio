@@ -6,6 +6,7 @@ import ReactJS from '../img/React-Logo.png'
 import Node from '../img/Node-Logo.png'
 import Express from '../img/Express-Logo.png'
 import PostgreSQL from '../img/PostgreSQL-Logo.png'
+import Konva from '../img/Konva-Logo.png'
 import Git from '../img/Github-Logo.png'
 
 
@@ -45,7 +46,13 @@ export default function ProjectThree() {
             target='blank' 
             rel="noopener noreferrer"
             style={{ fontSize:'20px'}}>
-              Click link to application</a> )
+              Click link to application</a> ) or 
+            ( <a 
+            href='https://github.com/CHThia/GA-Project04-YoungDaVinci-2024' 
+            target='blank' 
+            rel="noopener noreferrer"
+            style={{ fontSize:'20px'}}>
+            Click link to Git Repository</a> ) 
           </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ 
@@ -59,6 +66,7 @@ export default function ProjectThree() {
               maxWidth: '450px', 
               borderRadius:'15px', 
               border: '2px solid black',
+              boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.4)',
             }} />
           </div>
           
@@ -76,7 +84,7 @@ export default function ProjectThree() {
               
               <div style={{ 
                 display: 'grid', 
-                gridTemplateColumns: 'repeat(5, 1fr)', 
+                gridTemplateColumns: 'repeat(6, 1fr)', 
                 justifyItems:'left', 
               }}>
                 <div>
@@ -94,6 +102,10 @@ export default function ProjectThree() {
                 <div>
                   <img src= { PostgreSQL } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
                   <p style= {{margin: '5px 0 0 -10px', fontSize:'15px' }} >PostgreSQL</p>
+                </div>
+                <div>
+                  <img src= { Konva } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>
+                  <p style= {{margin: '5px 0 0 1px', fontSize:'15px' }} >Konva</p>
                 </div>
                 <div>
                   <img src= { Git } alt="javascript" style={{ maxWidth: '50px', height: 'auto', display: 'block' }}/>

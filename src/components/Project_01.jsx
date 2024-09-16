@@ -44,7 +44,13 @@ export default function ProjectOne() {
             target='blank' 
             rel="noopener noreferrer"
             style={{ fontSize:'20px'}}>
-              Click link to application</a> )
+              Click link to application</a> ) or 
+            ( <a 
+            href='https://github.com/CHThia/GA-Project01-AnimalChess-2024' 
+            target='blank' 
+            rel="noopener noreferrer"
+            style={{ fontSize:'20px'}}>
+            Click link to Git Repository</a> ) 
           </Modal.Title>
         </Modal.Header>
         <Modal.Body style={{ 
@@ -58,6 +64,7 @@ export default function ProjectOne() {
               maxWidth: '450px', 
               borderRadius:'15px', 
               border: '2px solid black',
+              boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.4)',
             }} />
           </div>
           

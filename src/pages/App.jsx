@@ -9,15 +9,21 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div style={{ marginTop: '35px' }}>
+      <div id='home' style={{ marginTop: '35px' }}>
         <Home />
       </div>
       <hr/>
-      <Skills />
+      <div id="skills">
+        <Skills />
+      </div>
       <hr/>
-      <ProjectShowCase />
+      <div id="projects">
+        <ProjectShowCase />
+      </div>
       <hr/>
-      <Contact />
+      <div id="contact">
+        <Contact />
+      </div>
     </>
   )
 }

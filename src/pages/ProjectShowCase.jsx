@@ -15,7 +15,8 @@ export default function ProjectShowcase() {
       <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(3, 1fr)', 
-          gap: '50px', padding: '10px', 
+          gap: '50px', 
+          padding: '10px', 
           justifyItems:'center', 
           alignItems: 'center', 
           marginTop: '35px' 

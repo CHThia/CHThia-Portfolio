@@ -1,20 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import CHThiaLogo from '../img/CHThia-Logo.png' 
 
 export default function navBar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light" 
+      <nav className="navbar navbar-expand-lg navbar-light" 
         style={{
           position:'sticky',
           top: 0,
+          backgroundColor:'#ffe9cf',
           zIndex: 1000
         }}>
 
         <div className="container-fluid">
 
-          <a className="navbar-brand" href="#home">Logo PlaceHolder</a>
+          <a className="navbar-brand" href="#home">
+          <img src= { CHThiaLogo } alt="html" style={{ maxWidth: '35px', marginLeft:'15px', height: 'auto', display: 'block' }}/>
+          </a>
 
           {/* <button 
             className="navbar-toggler" 
@@ -31,16 +34,16 @@ export default function navBar() {
 
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#home">Home</a>
+                <a className="nav-link" href="#home" style={{ fontWeight:'bold', marginRight:'10px' }}>HOME</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills">Skills</a>
+                <a className="nav-link" href="#skills" style={{ fontWeight:'bold', marginRight:'10px' }}>SKILLS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects">Projects</a>
+                <a className="nav-link" href="#projects" style={{ fontWeight:'bold', marginRight:'10px' }}>PROJECTS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact">Contact</a>
+                <a className="nav-link" href="#contact" style={{ fontWeight:'bold', marginRight:'10px' }}>CONTACT</a>
               </li>
             </ul>
 

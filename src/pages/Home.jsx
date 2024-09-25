@@ -1,4 +1,4 @@
-import PersonalProfile from '../img/CaricatureProfile.png'
+import PersonalProfile from '../img/caricatureProfile.PNG'
 
 export default function homePage() {
 
@@ -18,8 +18,8 @@ export default function homePage() {
         <div className='aboutMe' 
           style={{ 
             width:'70%',
-            height: '90%',
-            marginLeft: '550px'
+            height: '80%',
+            marginLeft: '500px'
           }}>
 
           <h1 style={{ 
@@ -40,28 +40,27 @@ export default function homePage() {
             <br />
             <span style={{ fontStyle:'italic'}}>Click to view my <a href="https://www.linkedin.com/in/thiach/" target="_blank">linkedin</a> profile.</span>
           </p>
-          <div className="bgColor" 
-            style={{ 
-              width: '325px',     
-              height: '325px',    
-              backgroundColor: '#ffdc5f',
-              borderRadius: '20px',
-              position: 'fixed',
-              top: '33%', 
-              right: '25%', 
-              transform: 'translateY(-50%)', 
-              zIndex: '10',
-              boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.5)',  
-            }}
-          >
-            <img src={PersonalProfile} alt="ThiaProfile" style={{ 
-                width: '325px',
-                height: '325px',    
-                objectFit: 'cover', 
-                display: 'block',
-            }} />
-          </div>
         </div>
+
+        <div className="bgColor" 
+          style={{ 
+            width:'30%',
+            height: '88%',
+            borderRadius: '25px',
+            backgroundColor:'#ffdc5f',
+            marginRight: '200px',
+            position: 'relative' 
+          }}>
+            
+          <img src={ PersonalProfile } alt="ThiaProfile" style={{ 
+            maxWidth: '125%', 
+            height: 'auto', 
+            display: 'block',
+            transform: 'translateX(-10%)', 
+            position: 'relative',
+          }} />
+        </div>
+
       </div>
     </>
   )

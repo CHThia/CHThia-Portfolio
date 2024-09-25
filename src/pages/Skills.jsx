@@ -20,7 +20,7 @@ export default function skill () {
   return (
     <>
       <div className="tech-logo-container" style={{ padding: '20px', maxWidth: '60%', margin: 'auto', marginBottom:'25px'}} >
-        <h3 style={{ textAlign: 'center', marginBottom: '35px' }}>Software Engineering Skills</h3>
+        <h3 style={{ textAlign: 'center', marginTop:'25px', marginBottom: '35px' }}>Software Engineering Skills</h3>
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(5, 1fr)', 

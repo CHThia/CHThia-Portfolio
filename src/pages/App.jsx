@@ -9,10 +9,11 @@ export default function App() {
   return (
     <>
       <NavBar />
-      <div id='home' style={{ marginTop: '35px' }}>
+      
+      <div id='home' >
         <Home />
       </div>
-      <hr/>
+      
       <div id="skills">
         <Skills />
       </div>

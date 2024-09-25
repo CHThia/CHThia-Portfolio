@@ -1,9 +1,9 @@
+import PersonalProfile from '../img/caricatureProfile.PNG'
+
 export default function homePage() {
 
   return (
     <>
-
-
       <div className="intro" 
         style={{
           display: 'grid', 
@@ -17,16 +17,17 @@ export default function homePage() {
 
         <div className='aboutMe' 
           style={{ 
-            width:'50%',
-            height: '80%',
-            marginLeft: '150px'
+            width:'70%',
+            height: '90%',
+            marginLeft: '550px'
           }}>
 
           <h1 style={{ 
             textAlign:'left', 
             fontFamily:'roboto, arial', 
             fontWeight: 'bold',
-            lineHeight: '1.5'  
+            fontSize:'60px',
+            lineHeight: '1.3'  
           }}>
             Hi,<br/>
             I&apos;m Thia,<br/>
@@ -34,21 +35,33 @@ export default function homePage() {
           </h1>
 
           <p style={{ textAlign:'left', marginTop: '0px' }}>
-            Front-End Developer | Back-End Developer
+            Software Engineer | Multimedia Designer | VR Enthusiast
+            <br />
+            <br />
+            <span style={{ fontStyle:'italic'}}>Click to view my <a href="https://www.linkedin.com/in/thiach/" target="_blank">linkedin</a> profile.</span>
           </p>
+          <div className="bgColor" 
+            style={{ 
+              width: '325px',     
+              height: '325px',    
+              backgroundColor: '#ffdc5f',
+              borderRadius: '20px',
+              position: 'fixed',
+              top: '33%', 
+              right: '25%', 
+              transform: 'translateY(-50%)', 
+              zIndex: '10',
+              boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.5)',  
+            }}
+          >
+            <img src={PersonalProfile} alt="ThiaProfile" style={{ 
+                width: '325px',
+                height: '325px',    
+                objectFit: 'cover', 
+                display: 'block',
+            }} />
+          </div>
         </div>
-
-        <div className="imageProfile" 
-          style={{ 
-            width:'30%',
-            height: '100%',
-            borderRadius: '150px',
-            backgroundColor:'yellow',
-            marginRight: '250px'
-          }}>
-            
-        </div>
-
       </div>
     </>
   )

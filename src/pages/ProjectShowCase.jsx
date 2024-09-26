@@ -9,10 +9,15 @@ export default function ProjectShowcase() {
 
   return(
     <>
-     <div className="project-showcase-container" style={{ padding: '20px', maxWidth: '70%', margin: 'auto', marginBottom:'25px' }} >
-
-      <h3 style={{ textAlign: 'center', marginTop:'20px', marginBottom: '35px' }}>Project Showcases</h3>
-
+    <div style={{ backgroundColor: '#fff4de', boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.3)', }}>
+     <div className="project-showcase-container" style={{ 
+      padding: '20px', 
+      maxWidth: '70%', 
+      margin: 'auto', 
+      marginBottom: '25px' 
+      }} 
+    >
+      <h3 style={{ textAlign: 'center',  fontWeight:'bold', fontFamily:'roboto, arial', marginTop:'35px', marginBottom: '35px' }}>PROJECT SHOWCASE</h3>
       <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(3, 1fr)', 
@@ -20,18 +25,18 @@ export default function ProjectShowcase() {
           padding: '10px', 
           justifyItems:'center', 
           alignItems: 'center', 
-          marginTop: '35px' 
+          marginTop: '35px',
+          marginBottom: '45px',
+          fontFamily: 'roboto, arial'
         }}>
-
           <ProjectOne />
           <ProjectTwo />
           <ProjectThree />
           <ProjectFive />
           <ProjectFour />
-
         </div>
-
      </div>
+    </div>
     </>
   )
 }

@@ -17,11 +17,11 @@ export default function App() {
       <div id="skills">
         <Skills />
       </div>
-      <hr/>
+
       <div id="projects">
         <ProjectShowCase />
       </div>
-      <hr/>
+
       <div id="contact">
         <Contact />
       </div>

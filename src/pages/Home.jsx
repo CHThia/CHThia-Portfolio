@@ -7,24 +7,26 @@ export default function homePage() {
       <div className="intro" 
         style={{
           display: 'grid', 
-          gridTemplateColumns: 'repeat(2 , 1fr)', 
-          gap: '20px', 
+          gridTemplateColumns: '1fr 1fr', 
+          gap: '50px', 
           padding: '50px',  
           justifyItems:'center', 
           alignItems: 'center', 
-          backgroundColor: 'lightblue',
-          width: '100vw',
-          height: '60vh', 
-          boxSizing: 'border-box'
+          background: 'linear-gradient(125deg, #d1f4ff, #57b7de)',
+          width: '100%', 
+          height: '550px',  
+          boxSizing: 'border-box',
+          boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.3)',
         }}>
 
         <div className='aboutMe' 
           style={{ 
             width: '600px', 
             height: 'auto',
-            margin: '0', 
+            margin: '0',
+            marginTop: '30px', 
             textAlign: 'left',
-            marginLeft: '375px'
+            marginLeft: '325px'
           }}>
 
           <h1 style={{ 
@@ -35,7 +37,7 @@ export default function homePage() {
             lineHeight: '1.3',  
           }}>
             Hi,<br/>
-            I&apos;m Thia,<br/>
+            I&apos;m Thia (程),<br/>
             FullStack Developer.
           </h1>
 
@@ -50,22 +52,24 @@ export default function homePage() {
 
           <div className="bgColor" 
             style={{ 
-              width: '350px', 
+              width: '275px', 
               height: '400px', 
               borderRadius: '25px',
               backgroundColor:'#ffdc5f',
-              marginRight:'250px',
-              position: 'relative' 
+              marginRight:'200px',
+              position: 'relative',
+              transform: 'translate(30%)',
+              boxShadow: '4px 4px 8px rgba(0, 0, 0, 0.5)',  
             }}>
               
             <img src={ PersonalProfile } alt="ThiaProfile" style={{ 
-              width: '115%', 
+              width: '185%', 
               height: 'auto', 
               display: 'block',
               position: 'absolute',
               top: '50%',
               left: '50%',
-              transform: 'translate(-50%, -50%)'
+              transform: 'translate(-75%, -46%)'
             }} />
           </div>
 

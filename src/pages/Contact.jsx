@@ -48,8 +48,11 @@ export default function ContactForm() {
 
   return (
     <>
+      <div>
+
+      </div>
       <div className="form-title" style={{ padding: '20px', maxWidth: '60%', margin: 'auto' }} >
-         <h2 style={{ textAlign: 'center', fontWeight: 'bold',  marginTop:'20px' }}>Get In Touch</h2>
+         <h2 style={{ textAlign: 'center', fontWeight: 'bold', fontFamily:'roboto, arial' }}>Get In Touch</h2>
       </div>
       
       <div className="form-container" style={{ 
@@ -62,15 +65,15 @@ export default function ContactForm() {
        }}>
         
         <div className="contact-details" style={{ padding: '20px'}}>
-          <h3>Contact Me</h3>
+          <h3 style={{ fontFamily:'roboto, arial' }}>Contact Me</h3>
           <hr />
-          <p style={{ textAlign:'left', marginTop:'25px', fontFamily:'helvetica' }}>
+          <p style={{ textAlign:'left', marginTop:'25px', fontFamily:'roboto, arial' }}>
             <span style={{ fontWeight: 'bold' }}>Email: </span>capitoljazzpro@gmail.com
           </p>
-          <p style={{ textAlign:'left', marginTop:'-25px', fontFamily:'helvetica' }}>
+          <p style={{ textAlign:'left', marginTop:'-25px', fontFamily:'roboto, arial' }}>
             <span style={{ fontWeight: 'bold' }}>Phone: </span>+65 90467815
           </p>
-          <p style={{ textAlign:'left', marginTop:'-25px', fontFamily:'helvetica' }}>
+          <p style={{ textAlign:'left', marginTop:'-25px', fontFamily:'roboto, arial' }}>
             <span style={{ fontWeight: 'bold' }}>LinkedIn: </span>
               <a href='https://www.linkedin.com/in/thiach/' 
               target='blank' 
@@ -80,7 +83,11 @@ export default function ContactForm() {
           </p>
         </div>
         
-        <div className="form-details">
+        <div className="form-details" style={{
+          width: '100%', 
+          height: '450px',  
+          boxSizing: 'border-box'
+        }}>
           <Container>
             <Row>
               <Col md={12} className="mx-auto">
@@ -96,22 +103,22 @@ export default function ContactForm() {
                 )}
                 <Form onSubmit={handleSubmit}>
 
-                  <Form.Group controlId="formName" className="mb-3">
+                  <Form.Group controlId="formName" className="mb-3" style={{ fontFamily:'roboto, arial' }}>
                     <Form.Label>Name</Form.Label>
                     <Form.Control type="text" name="name" placeholder="Enter your name" required />
                   </Form.Group>
 
-                  <Form.Group controlId="formEmail" className="mb-3">
+                  <Form.Group controlId="formEmail" className="mb-3" style={{ fontFamily:'roboto, arial' }}>
                     <Form.Label>Email</Form.Label>
                     <Form.Control type="email" name="email" placeholder="Enter your email" required />
                   </Form.Group>
 
-                  <Form.Group controlId="formMessage" className="mb-4">
+                  <Form.Group controlId="formMessage" className="mb-4" style={{ fontFamily:'roboto, arial' }}>
                     <Form.Label>Message</Form.Label>
                     <Form.Control as="textarea" name="message" rows={5} placeholder="Enter your message" required />
                   </Form.Group>
 
-                  <Button variant="primary" type="submit">
+                  <Button variant="primary" type="submit" style={{ fontFamily:'roboto, arial' }}>
                     Submit
                   </Button>
                 </Form>
@@ -120,10 +127,6 @@ export default function ContactForm() {
             </Row>
           </Container>
         </div>
-
-        
-        
-
       </div>
     </>
   );

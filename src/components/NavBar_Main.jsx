@@ -9,7 +9,7 @@ export default function navBar() {
         style={{
           position:'sticky',
           top: 0,
-          backgroundColor:'#ffe9cf',
+          backgroundColor:'#363636',
           zIndex: 1000
         }}>
 
@@ -19,31 +19,20 @@ export default function navBar() {
           <img src= { CHThiaLogo } alt="html" style={{ maxWidth: '35px', marginLeft:'15px', height: 'auto', display: 'block' }}/>
           </a>
 
-          {/* <button 
-            className="navbar-toggler" 
-            type="button" 
-            data-bs-toggle="collapse" 
-            data-bs-target="#navbarNav" 
-            aria-controls="navbarNav" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button> */}
-
           <div className="collapse navbar-collapse" id="navbarNav">
 
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="#home" style={{ fontWeight:'bold', marginRight:'10px' }}>HOME</a>
+                <a className="nav-link" href="#home" style={{ fontWeight:'bold', fontFamily:'roboto, arial', color:'white', marginRight:'10px' }}>HOME</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#skills" style={{ fontWeight:'bold', marginRight:'10px' }}>SKILLS</a>
+                <a className="nav-link" href="#skills" style={{ fontWeight:'bold', fontFamily:'roboto, arial', color:'white',marginRight:'10px' }}>SKILLS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#projects" style={{ fontWeight:'bold', marginRight:'10px' }}>PROJECTS</a>
+                <a className="nav-link" href="#projects" style={{ fontWeight:'bold',  fontFamily:'roboto, arial', color:'white',marginRight:'10px' }}>PROJECTS</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#contact" style={{ fontWeight:'bold', marginRight:'10px' }}>CONTACT</a>
+                <a className="nav-link" href="#contact" style={{ fontWeight:'bold', fontFamily:'roboto, arial', color:'white', marginRight:'10px' }}>CONTACT</a>
               </li>
             </ul>
 

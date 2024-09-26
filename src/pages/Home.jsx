@@ -7,19 +7,24 @@ export default function homePage() {
       <div className="intro" 
         style={{
           display: 'grid', 
-          gridTemplateColumns: 'repeat(2, 1fr)', 
-          gap: '10px', 
+          gridTemplateColumns: 'repeat(2 , 1fr)', 
+          gap: '20px', 
           padding: '50px',  
           justifyItems:'center', 
           alignItems: 'center', 
-          backgroundColor: 'lightblue' 
+          backgroundColor: 'lightblue',
+          width: '100vw',
+          height: '60vh', 
+          boxSizing: 'border-box'
         }}>
 
         <div className='aboutMe' 
           style={{ 
-            width:'70%',
-            height: '80%',
-            marginLeft: '500px'
+            width: '600px', 
+            height: 'auto',
+            margin: '0', 
+            textAlign: 'left',
+            marginLeft: '375px'
           }}>
 
           <h1 style={{ 
@@ -27,7 +32,7 @@ export default function homePage() {
             fontFamily:'roboto, arial', 
             fontWeight: 'bold',
             fontSize:'60px',
-            lineHeight: '1.3'  
+            lineHeight: '1.3',  
           }}>
             Hi,<br/>
             I&apos;m Thia,<br/>
@@ -40,26 +45,29 @@ export default function homePage() {
             <br />
             <span style={{ fontStyle:'italic'}}>Click to view my <a href="https://www.linkedin.com/in/thiach/" target="_blank">linkedin</a> profile.</span>
           </p>
+          
         </div>
 
-        <div className="bgColor" 
-          style={{ 
-            width:'30%',
-            height: '88%',
-            borderRadius: '25px',
-            backgroundColor:'#ffdc5f',
-            marginRight: '200px',
-            position: 'relative' 
-          }}>
-            
-          <img src={ PersonalProfile } alt="ThiaProfile" style={{ 
-            maxWidth: '125%', 
-            height: 'auto', 
-            display: 'block',
-            transform: 'translateX(-10%)', 
-            position: 'relative',
-          }} />
-        </div>
+          <div className="bgColor" 
+            style={{ 
+              width: '350px', 
+              height: '400px', 
+              borderRadius: '25px',
+              backgroundColor:'#ffdc5f',
+              marginRight:'250px',
+              position: 'relative' 
+            }}>
+              
+            <img src={ PersonalProfile } alt="ThiaProfile" style={{ 
+              width: '115%', 
+              height: 'auto', 
+              display: 'block',
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)'
+            }} />
+          </div>
 
       </div>
     </>

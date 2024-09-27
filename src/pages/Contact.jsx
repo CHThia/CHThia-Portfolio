@@ -50,14 +50,10 @@ export default function ContactForm() {
     <>
       <div className="form-title" style={{ 
         padding: '20px', 
-        maxWidth: '20%',
+        maxWidth: '100%',
         height: '70px', 
         margin: 'auto',
-        marginTop: '70px',
-        marginBottom: '25px',
-        backgroundColor: '#fccf05',
-        borderRadius: '50px',
-        boxShadow: '4px 4px 5px rgba(0, 0, 0, 0.3)'
+        marginTop: '35px'
       }}>
         <h2 style={{ 
           textAlign: 'center', 
@@ -65,7 +61,7 @@ export default function ContactForm() {
           fontFamily:'roboto, arial', 
           fontSize: '30px', 
           transform: 'translate(0, -5%)' }}>
-            Get In Touch With Me
+            Get In Touch
         </h2>
       </div>
       

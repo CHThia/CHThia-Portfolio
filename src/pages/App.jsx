@@ -3,6 +3,8 @@ import Home from "../pages/Home"
 import Skills from "../pages/Skills"
 import ProjectShowCase from '../pages/ProjectShowCase'
 import Contact from "../pages/Contact"
+import '../css/styles.css'
+
 
 export default function App() {
 

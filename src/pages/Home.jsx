@@ -1,3 +1,4 @@
+
 import PersonalProfile from '../img/caricatureProfile.png'
 
 export default function homePage() {

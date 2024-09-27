@@ -17,7 +17,16 @@ export default function ProjectShowcase() {
       marginBottom: '25px' 
       }} 
     >
-      <h3 style={{ textAlign: 'center',  fontWeight:'bold', fontFamily:'roboto, arial', marginTop:'35px', marginBottom: '35px' }}>PROJECT SHOWCASE</h3>
+      <h3 style={{ 
+        textAlign: 'center',  
+        fontWeight:'bold', 
+        fontFamily:'roboto, arial', 
+        margin: '35px 0 35px 0',
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center'  }}>
+        PROJECT SHOWCASE
+      </h3>
       <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(3, 1fr)', 

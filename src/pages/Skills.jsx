@@ -29,7 +29,16 @@ export default function skill () {
         boxSizing: 'border-box',
       }} >
         
-        <h3 style={{ textAlign: 'center', fontWeight:'bold', fontFamily:'roboto, arial', marginTop:'35px', marginBottom: '35px' }}>TECHNOLOGY SKILLS</h3>
+        <h3 style={{ 
+          textAlign: 'center', 
+          fontWeight:'bold', 
+          fontFamily:'roboto, arial', 
+          margin: '35px 0 35px 0',
+          display: 'flex', 
+          justifyContent: 'center', 
+          alignItems: 'center'  }}>
+            TECHNOLOGY SKILLS
+        </h3>
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(5, 1fr)', 

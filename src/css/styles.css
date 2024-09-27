@@ -5,6 +5,17 @@ p {
   margin: 50px auto;
 }
 
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+  font-family: roboto, arial;
+  margin-right: 10px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: orange;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -44,4 +55,3 @@ html {
     margin: 0 20px;
   }
 }
-

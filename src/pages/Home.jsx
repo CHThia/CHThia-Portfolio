@@ -1,4 +1,4 @@
-import PersonalProfile from '../img/caricatureProfile.png'
+import PersonalProfile from '../img/Animated-CaricatureProfile.gif'
 
 export default function homePage() {
 

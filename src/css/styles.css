@@ -248,7 +248,7 @@ img, video { max-width: 100%; height: auto; }
 
   /* Desktop refinements */
   .project-showcase-container { max-width: 70% !important; }
-  .tech-logo-container { max-width: 60% !important; }
+  .tech-logo-container { max-width: 60% !important; height: auto !important; margin-bottom: 48px !important; }
   .form-container { max-width: 60% !important; }
 
   .intro {

@@ -25,7 +25,6 @@ export default function skill () {
         margin: 'auto', 
         marginBottom:'35px',
         width: '100%', 
-        height: '675px',  
         boxSizing: 'border-box',
       }} >
         

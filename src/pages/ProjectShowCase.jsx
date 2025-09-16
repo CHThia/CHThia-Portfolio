@@ -9,7 +9,7 @@ export default function ProjectShowcase() {
 
   return(
     <>
-    <div style={{ backgroundColor: '#fff4de', boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.3)', }}>
+  <div style={{ backgroundColor: '#fff4de', boxShadow: '0px 5px 8px rgba(0, 0, 0, 0.3)', paddingTop: '16px' }}>
      <div className="project-showcase-container" style={{ 
       padding: '20px', 
       maxWidth: '70%', 
@@ -21,7 +21,7 @@ export default function ProjectShowcase() {
         textAlign: 'center',  
         fontWeight:'bold', 
         fontFamily:'roboto, arial', 
-        margin: '35px 0 35px 0',
+        margin: '20px 0 20px 0',
         display: 'flex', 
         justifyContent: 'center', 
         alignItems: 'center'  }}>
@@ -34,8 +34,8 @@ export default function ProjectShowcase() {
           padding: '10px', 
           justifyItems:'center', 
           alignItems: 'center', 
-          marginTop: '35px',
-          marginBottom: '45px',
+          marginTop: '20px',
+          marginBottom: '40px',
           fontFamily: 'roboto, arial'
         }}>
           <ProjectOne />

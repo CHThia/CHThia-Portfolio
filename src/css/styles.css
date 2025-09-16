@@ -29,9 +29,33 @@ html {
 /* Global media helpers */
 img, video { max-width: 100%; height: auto; }
 
-/* Ensure navbar items remain visible across widths (no JS toggler present) */
-.navbar .navbar-collapse { display: block !important; }
+/* Navbar defaults */
 .navbar .navbar-nav { align-items: center; gap: 8px; }
+
+/* Accessible hamburger button */
+.menu-toggle {
+  display: none; /* shown on small screens via media queries */
+  width: 44px;
+  height: 36px;
+  margin-right: 12px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.menu-toggle .bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 5px auto;
+  background: #fff;
+  transition: transform 200ms ease, opacity 200ms ease;
+}
+
+/* Navigation container that replaces Bootstrap collapse for our custom toggler */
+.nav-links {
+  display: flex;
+}
+.nav-links.open { display: flex; }
 
 /* Home intro section overrides */
 .intro { width: 100%; }
@@ -52,15 +76,25 @@ img, video { max-width: 100%; height: auto; }
     margin: 0 5px;
   }
 
-  /* Navbar: compact, horizontally scrollable if needed */
-  .navbar .navbar-nav {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    justify-content: flex-start;
-    gap: 12px;
+  /* Navbar: hamburger toggle + dropdown */
+  .menu-toggle { display: inline-block; }
+  .nav-links {
+    position: absolute;
+    right: 8px;
+    top: 58px;
+    background: #2f2f2f;
+    border-radius: 8px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+    padding: 8px 6px;
+    display: none;
+    flex-direction: column;
+    min-width: 170px;
+    z-index: 1001;
   }
-  .navbar .nav-link { padding-left: 8px; padding-right: 8px; }
+  .nav-links.open { display: flex; }
+  .navbar .navbar-nav { align-items: stretch; gap: 0; }
+  .navbar .nav-link { padding: 10px 14px; color: #fff; }
+  .navbar .nav-link:hover { background: #3c3c3c; border-radius: 6px; }
 
   /* Home intro stacks and scales */
   .intro {
@@ -79,17 +113,21 @@ img, video { max-width: 100%; height: auto; }
   .intro .aboutMe h1 { font-size: 28px !important; line-height: 1.25 !important; }
   .intro .bgColor {
     width: 100% !important;
-    height: auto !important;
+    height: 340px !important;          
     margin: 0 !important;
     transform: none !important;
-    display: flex !important;
-    justify-content: center !important;
+    display: block !important;        
+    position: relative !important;
+    overflow: hidden !important;
+    padding: 0 !important;
   }
   .intro .bgColor img {
-    position: static !important;
-    transform: none !important;
-    width: min(320px, 100%) !important;
-    max-width: 100% !important;
+    position: absolute !important;
+    left: 50% !important;              
+    bottom: -6px !important;            
+    transform: translateX(-50%) !important;
+    width: clamp(220px, 60vw, 280px) !important; 
+    max-width: none !important;
   }
 
   /* Project grid: single column */

@@ -113,7 +113,8 @@ export default function HomePage() {
         </div>
 
         <div className="bgColor" 
-          style={{ 
+          style={{
+            zIndex: 2,
             width: '275px', 
             height: '400px', 
             marginRight: '200px',

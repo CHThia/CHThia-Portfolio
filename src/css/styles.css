@@ -220,25 +220,28 @@ img, video { max-width: 100%; height: auto; }
   /* Align hero content width to Technology Skills (60% center) */
   .intro {
     padding: 50px 20vw !important; /* 20vw side padding centers a 60vw content area */
+    padding-bottom: 0 !important; /* ensure visual bottom aligns to section edge */
     box-sizing: border-box;
   }
 
   /* Enlarge and center PersonalProfile on desktop */
   .intro .bgColor {
-    width: 520px !important;
-    height: 520px !important;
+    width: 560px !important; /* ~7% larger container to support bigger image */
+    height: 560px !important;
     margin: 0 !important;
     transform: none !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: flex-end !important; /* place image at the bottom of the circle */
     position: relative !important;
+    align-self: end !important; /* anchor container to bottom of hero grid */
   }
   .intro .bgColor img {
     position: static !important;
     transform: none !important;
-    width: 95% !important;
-    max-width: 480px !important;
+    width: 125% !important; /* ~15% larger than before */
+    max-width: 600px !important; /* 480px * 1.15 */
     height: auto !important;
+    margin: 0 !important;
   }
 }

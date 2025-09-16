@@ -112,22 +112,14 @@ img, video { max-width: 100%; height: auto; }
   }
   .intro .aboutMe h1 { font-size: 28px !important; line-height: 1.25 !important; }
   .intro .bgColor {
-    width: 100% !important;
-    height: 340px !important;          
-    margin: 0 !important;
-    transform: none !important;
-    display: block !important;        
-    position: relative !important;
-    overflow: hidden !important;
-    padding: 0 !important;
+    width: 120% !important;
+    height: 325px !important;        
   }
   .intro .bgColor img {
     position: absolute !important;
     left: 50% !important;              
-    bottom: -6px !important;            
-    transform: translateX(-50%) !important;
-    width: clamp(220px, 60vw, 280px) !important; 
-    max-width: none !important;
+    top: -58px !important;            
+    transform: translateX(-55%) !important;
   }
 
   /* Project grid: single column */
